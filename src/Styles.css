@@ -1,0 +1,38 @@
+/* banner */
+.banner {
+  background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.274);
+  z-index: 1;
+}
+
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* text css */
+.full-width-text {
+  width: 100%;
+  text-align: center;
+}
