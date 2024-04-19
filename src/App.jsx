@@ -3,7 +3,8 @@ import "./Styles.css";
 import Banner from "./components/Banner";
 import Text from "./components/Text";
 import Work from "./components/Work";
-import { aboutMe } from "./text-data/text";
+import Website from "./components/Website";
+import { aboutMe, company, image, content } from "./text-data/text";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <div className="full-width-text">
           <Text title="Who am I?" text={aboutMe} />
         </div>
-        <div className="duel-card">
-          <Work title="Currently Employed @:" text="Lewagon"/>
+        <div className="duel-card top-spacing">
+          <Work title="Currently Employed @:" image={image} company={company} content={content}/>
+          <Website />
         </div>
       </div>
     </>
